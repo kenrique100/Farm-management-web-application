@@ -11,8 +11,8 @@ services:
           - 10.0.0.54:8080:8080
     environment:
         MYSQL_HOST: mysqldb
-        MYSQL_USER: demosez
-        MYSQL_PASSWORD: Aiyah@5108
+        MYSQL_USER: 
+        MYSQL_PASSWORD: 
         MYSQL_PORT: 3306
     depends_on:
       - mysqldb
@@ -29,10 +29,10 @@ services:
     image: mysql:8.0.32
     restart: always
     environment:
-        MYSQL_DATABASE: kombe
-        MYSQL_ROOT_PASSWORD: Aiyah@5108
-        MYSQL_USER: demosez
-        MYSQL_PASSWORD: Aiyah@5108       
+        MYSQL_DATABASE: 
+        MYSQL_ROOT_PASSWORD: 
+        MYSQL_USER: 
+        MYSQL_PASSWORD:     
     ports:
       - '10.0.0.54:3306:3306'
     volumes: 
@@ -47,8 +47,8 @@ volumes:
 #     image: postgres:14.1-alpine
 #     restart: always
 #     environment:
-#       POSTGRES_USER : 'demosez'
-#       POSTGRES_PASSWORD: 'Aiyah@5108'
+#       POSTGRES_USER : 
+#       POSTGRES_PASSWORD: 
 #       POSTGRES_DB : kombe
 #     ports:
 #            - "50.215.60.97:5432:5432" 
@@ -59,8 +59,8 @@ volumes:
 #    driver: local
 #    environment:
 #      MYSQL_HOST: mysqldb
-#      MYSQL_USER: kombe
-#      MYSQL_PASSWORD: Aiyah@5108
+#      MYSQL_USER: 
+#      MYSQL_PASSWORD:
 #      MYSQL_PORT: 3306
 #  mysqldb: 
 #    #container_name: mysqldb
@@ -70,5 +70,5 @@ volumes:
 #    ports: 
 #     - 3307:3306   
 #    environment:
-#      MYSQL_DATABASE: kombe
-#      MYSQL_ROOT_PASSWORD: Aiyah@5108
+#      MYSQL_DATABASE: 
+#      MYSQL_ROOT_PASSWORD: 
